@@ -1,7 +1,6 @@
 module Zohoho
   require 'httparty'
   require 'json'
-
   class Connection
     include HTTParty
 
