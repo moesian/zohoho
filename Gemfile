@@ -2,7 +2,7 @@ source "http://rubygems.org"
 # Add dependencies required to use your gem here.
 # Example:
 #   gem "activesupport", ">= 2.3.5"
-  gem 'httparty', "~> 0.11.0"
+  gem 'httparty', "~> 0.8.1"
   gem 'json', "~>1.7.0"
   gem 'xml-simple', "~>1.1.0"
 
