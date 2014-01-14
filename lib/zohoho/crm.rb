@@ -35,7 +35,7 @@ module Zohoho
     def add_lead(company, last_name, info = {})
       info.merge!({'Company' => company, 'Last Name' => last_name})
       xmlData = parse_data(info, 'Leads')
-      record = @conn.call('Leads', 'insertRecords', {:xmlData => xmlData, :newFormat => 1}, :post)
+      record = @conn.call('Leads', 'insertRecords', {:xmlData => xmlData, :newFormat => 1, :wfTrigger => true}, :post)
       record['Id']
     end
 
